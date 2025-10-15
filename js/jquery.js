@@ -1,5 +1,5 @@
 $(function() {
-$(".hamburger").click(function() {
+  $(".hamburger").click(function() {
     $(this).toggleClass("is-active");       // 線をバツに変形
     $("#global-nav").toggleClass("is-open"); // ナビ開閉
 
@@ -16,13 +16,13 @@ $(".hamburger").click(function() {
     $(this).find(".visually-hidden").text("メニューを開く");
     $(this).attr("aria-label", "メニューを開く");
     }
-});
-$('#main-visual-fade-in').each(function() {
+  });
+  $('#main-visual-fade-in').each(function() {
     var elemTop = $(this).offset().top;
     var scrollBottom = $(window).scrollTop() + $(window).height();
 
     if (scrollBottom > elemTop + 50) {
     $(this).addClass('visible');
     }
-});
+  });
 });
