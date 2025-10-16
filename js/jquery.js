@@ -1,4 +1,5 @@
 $(function() {
+  // ハンバーガーボタンクリック時
   $(".hamburger").click(function() {
     $(this).toggleClass("is-active");       // 線をバツに変形
     $("#global-nav").toggleClass("is-open"); // ナビ開閉
@@ -17,6 +18,8 @@ $(function() {
     $(this).attr("aria-label", "メニューを開く");
     }
   });
+
+  // トップページのメインビジュアル表示
   $('#main-visual-fade-in').each(function() {
     var elemTop = $(this).offset().top;
     var scrollBottom = $(window).scrollTop() + $(window).height();
@@ -24,5 +27,17 @@ $(function() {
     if (scrollBottom > elemTop + 50) {
     $(this).addClass('visible');
     }
+  });
+
+  // 診療案内ページのセクション移動ボタンクリック時
+  $('.move-section-button').click(function(e) {
+    e.preventDefault();
+    const target = $(this).attr('href');
+    const position = $(target).offset().top;
+    const headerHeight = $('.header').outerHeight();
+
+    $('html, body').animate({
+      scrollTop: position - headerHeight
+    }, 600);
   });
 });
