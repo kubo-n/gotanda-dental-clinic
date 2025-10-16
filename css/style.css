@@ -272,9 +272,20 @@ figcaption {
     justify-content: center;
   }
 
+  body.access_and_consultation_hours .page-title,
+  body.access_and_consultation_hours .page-title-ja,
+  body.access_and_consultation_hours .page-title-en {
+    width: 246px;
+  }
+
+  body.access_and_consultation_hours .page-title-ja span {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
   .page-title-en span {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .breadcrumbs{
@@ -654,6 +665,12 @@ figcaption {
     display: flex; 
     align-items: center;
     justify-content: center;
+  }
+
+  body.access_and_consultation_hours .page-title,
+  body.access_and_consultation_hours .page-title-ja,
+  body.access_and_consultation_hours .page-title-en {
+    width: 314px;
   }
 
   .page-title-en span {
