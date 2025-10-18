@@ -89,6 +89,32 @@
         <p><a href="/">HOME</a></p> &gt; 
         <p>WEB予約</p>
       </nav>
+      <section class="reservation_wrapper">
+        <h2 class="reservation_section">患者様情報を入力してください。</h2>
+        <form id="reservation_form">
+          <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="tel">TEL</label>
+            <input type="tel" id="tel" name="tel" pattern="^(0\d{1,4}-\d{1,4}-\d{4})$" required>
+          </div>
+          <div>
+            <label for="reservation_date">ご予約日</label>
+            <input type="date" id="reservation_date" name="reservation_date">
+          </div>            
+          <div>
+            <label for="message">ご要望・ご質問など</label>
+            <textarea id="message" name="message" rows="5" cols="40" ></textarea>
+          </div>
+          <button type="submit" class="form-submit">入力内容を確認する</button>      
+        </form>
+      </section>
     </main>
     <footer>
       <div class="footer-top">

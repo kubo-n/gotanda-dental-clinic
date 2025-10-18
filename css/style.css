@@ -112,6 +112,44 @@ figcaption {
   font-size: 24px;
 }
 
+form {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 17px;
+}
+
+form div:last-of-type {
+  margin-bottom: 0;
+}
+
+  input,
+  textarea {
+    height: 48px;
+    width: 780px;
+    padding: 8px;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    text-align: left;
+    margin-left: auto; 
+  }
+
+  #reservation_date {
+    width: 200px;
+    margin-right: 580px;
+  }
+
+  textarea {
+    height: 240px;
+    resize: vertical;
+  }
+
 
 /* スマホ 〜 タブレット版 */
 @media (max-width: 1023px) {
@@ -668,6 +706,37 @@ figcaption {
     text-align: center;
   }
 
+    /* WEB予約ページ */
+  .reservation_wrapper {
+    height: 778px;
+    padding: 56px 16px;
+  }
+
+  .reservation_section {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  label {
+    flex: 0 0 150px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .form-submit {
+    margin-top: 48px;
+    background-color: #EDB0BF;
+    width: 310px;
+    height: 56px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+  }
 }
 
 /* PC版 */
@@ -1102,5 +1171,37 @@ figcaption {
 
   .consultation_hours_table_sp {
     display: none;
+  }
+
+  /* WEB予約ページ */
+  .reservation_wrapper {
+    height: 874px;
+    padding: 80px 160px;
+  }
+
+  .reservation_section {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 56px;
+  }
+
+  label {
+    flex: 0 0 150px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .form-submit {
+    margin-top: 56px;
+    background-color: #EDB0BF;
+    width: 310px;
+    height: 58px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
   }
 }
