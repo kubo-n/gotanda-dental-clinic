@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB予約｜五反田歯科医院</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body class="medical-information">
+    <header class="header">
+      <h1 class="header-logo">
+        <a href="/">
+          <img
+            src="/img/logo.svg"
+            alt="五反田歯科医院"
+            width="272"
+            height="58"
+          />
+        </a>
+      </h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/medical_information/">診療案内</a></li>
+          <li><a href="/access_and_consultation_hours/">アクセス・診療時間</a></li>
+        </ul>
+        <p>
+          <a class="header-nav-button" href="/online_reservation/">WEB予約はこちら</a>
+        </p>
+      </nav>
+      <button type="button" class="hamburger" aria-controls="global-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="visually-hidden">メニューを開く</span>
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </button>
+      <nav id="global-nav" class="nav-popup" aria-hidden="true">
+        <div class="nav-popup-wrapper">
+          <a href="/">
+            <img
+            src="/img/logo_popup.png"
+            class="nav-popup-logo"
+            alt="五反田歯科医院"
+            width="215"
+            height="51"
+            />
+          </a>
+          <ul class="nav-popup-list">
+            <li><a href="/">トップページ</a></li>
+            <li><a href="/medical_information/">診療案内</a></li>
+            <li><a href="/access_and_consultation_hours/">アクセス・診療時間</a></li>
+          </ul>
+          <p>
+            <a class="header-nav-button" href="/online_reservation/">WEB予約はこちら</a>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="child-main-visual">
+        <h2 class="page-title">
+          <div class="page-title-ja">
+            <span>WEB予約</span>
+          </div>
+          <div class="page-title-en">
+            <span>Online reservation</span>
+          </div>
+        </h2>
+        <figure class="main-visual-figure">
+          <picture>
+            <source 
+              srcset="/img/online_reservation_mv_sp.png"
+              media="(max-width: 1023px)"
+            />
+            <img 
+              src="/img/online_reservation_mv.png" 
+              alt="ノートパソコン"
+              width="1440"
+              height="356"
+            />
+          </picture>
+        </figure>
+      </section>
+      <nav class="breadcrumbs">
+        <p><a href="/">HOME</a></p> &gt; 
+        <p>WEB予約</p>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="/">
+            <img
+              src="/img/logo.svg"
+              alt="五反田歯科医院"
+              width="272"
+              height="58"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="/">トップページ</a></li>
+            <li><a href="/medical_information/">診療案内</a></li>
+            <li><a href="/access_and_consultation_hours/">アクセス・診療時間</a></li>
+            <li><a href="/online_reservation/">WEB予約</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="footer-sns-nav">
+            <li>
+              <a href="#">
+                <img src="/img/facebook.png" alt="facebook" width="30" height="30">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/img/X.png" alt="X" width="30" height="30">
+              </a>
+              </li>
+            <li>
+              <a href="#">
+                <img src="/img/instagram.png" alt="instagram" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><small>Copyright © 2024 gotanda dental clinic. All Rights Reserved.</small></p>
+      </div>
+    </footer>
+    <script src="/js/jquery.js"></script>
+  </body>
+</html>
