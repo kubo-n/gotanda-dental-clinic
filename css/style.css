@@ -105,6 +105,14 @@ figcaption {
   align-items: center;
 }
 
+.circle,
+.hyphen
+{
+  color: #6DB1B7;
+  font-size: 24px;
+}
+
+
 /* スマホ 〜 タブレット版 */
 @media (max-width: 1023px) {
 
@@ -274,7 +282,7 @@ figcaption {
 
   .page-title-en span {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .breadcrumbs{
@@ -317,10 +325,6 @@ figcaption {
     margin-top: 32px;
   }
 
-  body.medical-information .section-wrapper {
-    gap: 32px;
-  }
-
   .section-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -331,20 +335,11 @@ figcaption {
     max-width: 666px;
   }
 
-  body.medical-information .section-text-wrapper {
-    gap: 16px;
-    align-items: flex-start;
-  }
-
   .section-text-heading {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-
-  body.medical-information .section-text-heading {
-    text-align: left;
   }
 
   .section-text {
@@ -558,6 +553,121 @@ figcaption {
     border-width: 6px 0 6px 8px;
     border-color: transparent transparent transparent #50D5E0;
   }
+
+  body.medical-information .section-wrapper {
+    gap: 32px;
+  }
+
+  body.medical-information .section-text-wrapper {
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  body.medical-information .section-text-heading {
+    text-align: left;
+  }
+
+  /* アクセス・診療時間ページ */
+  body.access_and_consultation_hours .page-title,
+  body.access_and_consultation_hours .page-title-ja,
+  body.access_and_consultation_hours .page-title-en {
+    width: 246px;
+  }
+
+  body.access_and_consultation_hours .page-title-ja span {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  .access {
+    padding: 56px 16px;
+    height: 1063px;
+  }
+
+  .acces-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .section-text-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  body.access_and_consultation_hours .section-wrapper {
+    align-items: flex-start;
+  }
+
+  body.access_and_consultation_hours .section-text {
+    height: 56px;
+  }
+
+  body.access_and_consultation_hours .section-text-heading {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 402px;
+    border: 0;
+  }
+
+  .consultation_hours {
+    height: 818px;
+    padding: 56px 16px;
+  }
+
+  .consultation_hours_table {
+    display: none;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .consultation_hours_table_sp {
+    width: 100%;
+    min-width: 398px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 32px;
+  }
+
+  .consultation_hours_table_sp th,
+  .consultation_hours_table_sp td {
+    border: 2px solid #E9F9FA;
+    background-color: #F5FDFE;
+    padding: 8px 12px;
+    height: 79px;
+    font-weight: 500;
+  }
+
+  .consultation_hours_table_sp thead th {
+    background-color: #E9F9FA;
+    height: 79px;
+  }
+
+  .consultation_hours_table_sp tbody th {
+    background-color: #fafafa;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .consultation_hours_table_sp th:first-child,
+  .consultation_hours_table_sp td:first-child {
+    background-color: #E9F9FA;
+    width: 104px;
+    text-align: center;
+  }
+
 }
 
 /* PC版 */
@@ -903,5 +1013,94 @@ figcaption {
     border-style: solid;
     border-width: 6px 0 6px 8px;
     border-color: transparent transparent transparent #50D5E0;
+  }
+
+  /* アクセス・診療時間ページ */
+  body.access_and_consultation_hours .page-title,
+  body.access_and_consultation_hours .page-title-ja,
+  body.access_and_consultation_hours .page-title-en {
+    width: 314px;
+  }
+
+  .access {
+    padding: 80px 160px;
+    height: 985px;
+  }
+
+  .acces-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  body.access_and_consultation_hours .section-wrapper {
+    justify-content: flex-end;
+  }
+
+  .section-text-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  body.access_and_consultation_hours .section-text-heading {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+  }
+
+  .consultation_hours {
+    height: 476px;
+    padding: 80px 160px;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .consultation_hours_table {
+    width: 100%;
+    min-width: 1120px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 56px;
+  }
+
+  .consultation_hours_table th,
+  .consultation_hours_table td {
+    border: 2px solid #E9F9FA;
+    background-color: #F5FDFE;
+    padding: 8px 12px;
+    height: 64px;
+    font-weight: 500;
+  }
+
+  .consultation_hours_table thead th {
+    background-color: #E9F9FA;
+    height: 64px;
+  }
+
+  .consultation_hours_table tbody th {
+    background-color: #fafafa;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .consultation_hours_table th:first-child,
+  .consultation_hours_table td:first-child {
+    background-color: #E9F9FA;
+    width: 280px;
+  }
+
+  .consultation_hours_table_sp {
+    display: none;
   }
 }
