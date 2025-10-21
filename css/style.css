@@ -112,43 +112,53 @@ figcaption {
   font-size: 24px;
 }
 
-form {
+.reservation_form {
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
 }
 
-form div {
+.reservation_item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 17px;
 }
 
-form div:last-of-type {
+.reservation_item:last-of-type {
   margin-bottom: 0;
 }
 
-  input,
-  textarea {
-    height: 48px;
-    width: 780px;
-    padding: 8px;
-    border: 1px solid #C5C5C5;
-    border-radius: 4px;
-    text-align: left;
-    margin-left: auto; 
-  }
+.reservation_item_input {
+  height: 48px;
+  width: 780px;
+  padding: 8px;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  text-align: left;
+  margin-left: auto; 
+}
 
-  #reservation_date {
-    width: 200px;
-    margin-right: 580px;
-  }
+.reservation_item_input_date {
+  height: 48px;
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  text-align: left;
+  margin-right: 580px;
+}
 
-  textarea {
-    height: 240px;
-    resize: vertical;
-  }
+.reservation_item_textarea {
+  height: 240px;
+  width: 780px;
+  padding: 8px;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  text-align: left;
+  margin-left: auto; 
+  resize: vertical;
+}
 
 
 /* スマホ 〜 タブレット版 */
