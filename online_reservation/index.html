@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>診療案内｜五反田歯科医院</title>
+    <title>WEB予約｜五反田歯科医院</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,21 +64,21 @@
       <section class="child-main-visual">
         <h2 class="page-title">
           <div class="page-title-ja">
-            <span>診療案内</span>
+            <span>WEB予約</span>
           </div>
           <div class="page-title-en">
-            <span>Medical Information</span>
+            <span>Online reservation</span>
           </div>
         </h2>
         <figure class="main-visual-figure">
           <picture>
             <source 
-              srcset="/img/medical_information_mv_sp.png"
+              srcset="/img/online_reservation_mv_sp.png"
               media="(max-width: 1023px)"
             />
             <img 
-              src="/img/medical_information_mv.png" 
-              alt="診療中の様子"
+              src="/img/online_reservation_mv.png" 
+              alt="ノートパソコン"
               width="1440"
               height="356"
             />
@@ -87,52 +87,33 @@
       </section>
       <nav class="breadcrumbs">
         <p><a href="/">HOME</a></p> &gt; 
-        <p>診療案内</p>
+        <p>WEB予約</p>
       </nav>
-      <nav class="move-section">
-        <a class="move-section-button" href="#tooth_decay_treatment">虫歯治療</a>
-        <a class="move-section-button" href="#periodontal_disease_treatment">歯周病治療</a>
-      </nav>
-      <section class="treatment" id="tooth_decay_treatment">
-        <h2 class="section-title">虫歯治療</h2>
-        <section class="section-wrapper reverse">
-          <div class="section-text-wrapper">
-            <h3 class="section-text-heading">患者さまの満足度を最優先し<br>痛みを軽減した治療を心がけます</h3>
-            <p class="section-text">
-              削る量や回数が多くなるほど歯は弱くなります。従いまして、治療を繰り返さないことが大切です。当院はなるべく抜かない、削らない治療を行っています。<br>
-              また、できるだけ痛みを軽減した治療を心がけています。
-            </p>
+      <section class="reservation_wrapper">
+        <h2 class="reservation_section">患者様情報を入力してください。</h2>
+        <form class="reservation_form" id="reservation_form">
+          <div class="reservation_item">
+            <label for="name">お名前</label>
+            <input class="reservation_item_input" type="text" id="name" name="name" required>
           </div>
-          <figure>
-            <img
-              src="/img/tooth_decay_treatment.png"
-              alt="虫歯治療の様子"
-              width="422"
-              height="306"
-            />
-          </figure>
-        </section>
-      </section>
-      <section class="treatment" id="periodontal_disease_treatment">
-        <h2 class="section-title">歯周病治療</h2>
-        <section class="section-wrapper">
-          <div class="section-text-wrapper">
-            <h3 class="section-text-heading">歯周病の治療と予防をしっかりと行い<br>歯の寿命を延しましょう</h3>
-            <p class="section-text">
-              歯周病を治療しないと、歯茎が炎症を起こし、歯を支える骨が破壊されます。<br>
-              これにより、歯が抜けるリスクが高まり、口臭や出血が常に気になる状態になります。<br>
-              歯周病は全身の健康にも悪影響を及ぼし、心臓病や糖尿病のリスクを高めることが知られています。早期治療がとても大切です。
-            </p>
+          <div class="reservation_item">
+            <label for="email">E-Mail</label>
+            <input class="reservation_item_input" type="email" id="email" name="email" required>
           </div>
-          <figure>
-            <img
-              src="/img/periodontal_disease_treatment.png"
-              alt="歯周病治療の様子"
-              width="422"
-              height="306"
-            />
-          </figure>
-        </section>
+          <div class="reservation_item">
+            <label for="tel">TEL</label>
+            <input class="reservation_item_input" type="tel" id="tel" name="tel" pattern="^(0\d{1,4}-\d{1,4}-\d{4})$" required>
+          </div>
+          <div class="reservation_item">
+            <label for="reservation_date">ご予約日</label>
+            <input class="reservation_item_input_date" type="date" id="reservation_date" name="reservation_date">
+          </div>            
+          <div class="reservation_item">
+            <label for="message">ご要望・ご質問など</label>
+            <textarea class="reservation_item_textarea" id="message" name="message" rows="5" cols="40" ></textarea>
+          </div>
+          <button type="submit" class="form-submit">入力内容を確認する</button>      
+        </form>
       </section>
     </main>
     <footer>

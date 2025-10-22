@@ -40,4 +40,10 @@ $(function() {
       scrollTop: position - headerHeight
     }, 600);
   });
+
+  // WEB予約ページのダミーボタンクリック時
+  $('#reservation_form').on('submit', function(e) {
+    e.preventDefault(); // ページ遷移や送信をキャンセル
+    alert('送信処理をここで行います');
+  });
 });
